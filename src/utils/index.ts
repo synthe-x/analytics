@@ -379,3 +379,11 @@ export function upperCaseFirstOfString(str: string) {
   arr[0] = arr[0].toUpperCase();
   return arr.join("");
 }
+
+export const toSentenceCase = (camelCase: string) => {
+  if (camelCase) {
+      const result = camelCase.replace(/([A-Z])/g, ' $1');
+      return result[0].toUpperCase() + result.substring(1).toLowerCase();
+  }
+  return '';
+};

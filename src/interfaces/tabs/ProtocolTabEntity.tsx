@@ -1,5 +1,5 @@
 import { Box, Button, CircularProgress, Grid, Tooltip, Typography } from "@mui/material";
-import { negativeFieldList } from "../../constants";
+import { headers, negativeFieldList } from "../../constants";
 import { base64toBlobJPEG, convertTokenDecimals, downloadCSV } from "../../utils";
 import { useEffect, useState } from "react";
 import { CopyLinkToClipboard } from "../../common/utilComponents/CopyLinkToClipboard";
@@ -357,7 +357,7 @@ function ProtocolTabEntity({
           <Box sx={{ marginTop: "24px" }}>
             <CopyLinkToClipboard link={window.location.href} scrollId={entityName}>
               <Typography variant="h4" id={entityName}>
-                {entityName}
+                {headers[entityName] ?? entityName}
               </Typography>
             </CopyLinkToClipboard>
           </Box>
@@ -529,7 +529,7 @@ function ProtocolTabEntity({
         <Box my={3}>
           <CopyLinkToClipboard link={window.location.href} scrollId={entityName}>
             <Typography variant="h4" id={entityName}>
-              {entityName}
+              {entityName} 
             </Typography>
           </CopyLinkToClipboard>
         </Box>

@@ -1,6 +1,7 @@
 import { Box, Button, Grid, Tooltip, Typography } from "@mui/material";
 import moment from "moment";
 import { useEffect, useRef, useState } from "react";
+import { titles } from "../../constants";
 import { lineupChartDatapoints, toDate } from "../../utils";
 import { CopyLinkToClipboard } from "../utilComponents/CopyLinkToClipboard";
 import { CsvOverlayColumnDropDown } from "../utilComponents/CsvOverlayColumnDropDown";
@@ -363,7 +364,7 @@ export const ChartContainer = ({ identifier, elementId, baseKey, datasetLabel, d
             <Box sx={{ width: "62.5%", marginBottom: "8px" }} mt={3}>
                 <Grid container justifyContent="space-between">
                     <CopyLinkToClipboard link={window.location.href} scrollId={linkToElementId}>
-                        <Typography variant="h6">{chartTitle}</Typography>
+                        <Typography variant="h6">{(titles[chartTitle] ?? chartTitle )}</Typography>
                     </CopyLinkToClipboard>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                         {csvColumnOptions}

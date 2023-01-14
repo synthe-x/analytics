@@ -131,3 +131,55 @@ export const blockExplorers: Record<string, string> = {
 
 // negativeFieldList contains field names that can be negative
 export const negativeFieldList = ["dailyNetVolumeUSD", "netVolumeUSD", "cumulativeNetVolumeUSD"];
+
+export const titles: any = {
+  "financialsDailySnapshots-totalValueLockedUSD": "Total Value Locked (in USD)",
+  "financialsDailySnapshots-dailySupplySideRevenueUSD": "Supply Side Revenue (in USD)",
+  "financialsDailySnapshots-cumulativeSupplySideRevenueUSD": "Cumulative Supply Side Revenue (in USD)",
+  "financialsDailySnapshots-dailyProtocolSideRevenueUSD": "Protocol Side Revenue (in USD)",
+  "financialsDailySnapshots-cumulativeProtocolSideRevenueUSD": "Cumulative Protocol Side Revenue (in USD)",
+  "financialsDailySnapshots-dailyTotalRevenueUSD": "Daily Total Revenue (in USD)",
+  "financialsDailySnapshots-cumulativeTotalRevenueUSD": "Cumulative Total Revenue (in USD)",
+  "financialsDailySnapshots-totalBorrowBalanceUSD": "Total Borrow Balance (in USD)",
+  "financialsDailySnapshots-dailyBorrowUSD": "Daily Borrow (in USD)",
+  "financialsDailySnapshots-cumulativeBorrowUSD": "Cumulative Borrow (in USD)",
+  "financialsDailySnapshots-totalDepositBalanceUSD": "Total Deposit Balance (in USD)",
+  "financialsDailySnapshots-dailyDepositUSD": "Daily Deposit (in USD)",
+  "financialsDailySnapshots-cumulativeDepositUSD": "Cumulative Deposit (in USD)",
+  "financialsDailySnapshots-mintedTokenSupplies": "Synth Token Supplies",
+  "financialsDailySnapshots-dailyLiquidateUSD": "Daily Liquidate (in USD)",
+  "financialsDailySnapshots-cumulativeLiquidateUSD": "Cumulative Liquidate (in USD)",
+
+  "usageMetricsDailySnapshots-cumulativeUniqueUsers": "Cumulative Unique Users",
+  "usageMetricsDailySnapshots-dailyActiveUsers": "Daily Active Users",
+  "usageMetricsDailySnapshots-dailyTransactionCount": "Daily Transaction Count",
+  "usageMetricsDailySnapshots-dailyDepositCount": "Daily Deposit Count",
+  "usageMetricsDailySnapshots-dailyWithdrawCount": "Daily Withdraw Count",
+  "usageMetricsDailySnapshots-dailyBorrowCount": "Daily Borrow Count",
+  "usageMetricsDailySnapshots-dailyRepayCount": "Daily Repay Count",
+  "usageMetricsDailySnapshots-dailyLiquidateCount": "Daily Liquidate Count",
+  "usageMetricsDailySnapshots-totalPoolCount": "Total Pool Count",
+  "usageMetricsDailySnapshots-cumulativeUniqueDepositors": "Cumulative Unique Depositors",
+  "usageMetricsDailySnapshots-cumulativeUniqueBorrowers": "Cumulative Unique Borrowers",
+  "usageMetricsDailySnapshots-cumulativeUniqueLiquidators": "Cumulative Unique Liquidators",
+  "usageMetricsDailySnapshots-cumulativeUniqueLiquidatees": "Cumulative Unique Liquidatees",
+  "usageMetricsDailySnapshots-dailyActiveDepositors": "Daily Active Depositors",
+  "usageMetricsDailySnapshots-dailyActiveBorrowers": "Daily Active Borrowers",
+  "usageMetricsDailySnapshots-dailyActiveLiquidators": "Daily Active Liquidators",
+  "usageMetricsDailySnapshots-dailyActiveLiquidatees": "Daily Active Liquidatees",
+
+  "usageMetricsHourlySnapshots-cumulativeUniqueUsers": "Cumulative Unique Users",
+  "usageMetricsHourlySnapshots-hourlyActiveUsers": "Hourly Active Users",
+  "usageMetricsHourlySnapshots-hourlyTransactionCount": "Hourly Transaction Count",
+  "usageMetricsHourlySnapshots-hourlyDepositCount": "Hourly Deposit Count",
+  "usageMetricsHourlySnapshots-hourlyWithdrawCount": "Hourly Withdraw Count",
+  "usageMetricsHourlySnapshots-hourlyBorrowCount": "Hourly Borrow Count",
+  "usageMetricsHourlySnapshots-hourlyRepayCount": "Hourly Repay Count",
+  "usageMetricsHourlySnapshots-hourlyLiquidateCount": "Hourly Liquidate Count",
+}
+
+export const headers: any = {
+  "financialsDailySnapshots": "Financials",
+  "usageMetricsDailySnapshots": "Usage Metrics: Daily",
+  "usageMetricsHourlySnapshots": "Usage Metrics: Hourly",
+}

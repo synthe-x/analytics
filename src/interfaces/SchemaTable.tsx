@@ -482,7 +482,7 @@ function SchemaTable({ entityData, protocolType, schemaName, dataFields, issuesP
 
   return (
     <>
-      {schemaHeader}
+      {/* {schemaHeader} */}
       <TableContainer component={Paper} sx={{ justifyContent: "center", display: "flex", alignItems: "center" }}>
         <Table key="Table" sx={{ maxWidth: 800 }} aria-label="simple table">
           <TableBody>{schema}</TableBody>
